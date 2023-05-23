@@ -17,6 +17,17 @@ function addTask(){
     saveData();
 }
 
+// limited characters
+
+inputBox.addEventListener("input", function(e) {
+  const maxLength = 30;
+  const currentLength = inputBox.value.length;
+  
+  if (currentLength > maxLength) {
+    alert("You can only write up to 30 charaters par list!");
+  }
+});
+
 listContainer.addEventListener('click', function(e){
 if(e.target.tagName === "LI"){
     e.target.classList.toggle("checked");

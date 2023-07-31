@@ -57,6 +57,11 @@ button {
   cursor: pointer;
   border-radius: 50px;
 }
+@media screen and(max-width < 600px){
+  button {
+    margin-right:500px;
+  }
+};
 
 ul li {
   list-style: none;
